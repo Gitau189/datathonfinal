@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset default styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Minimalistic styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Add specific styles for academic content */
+        .academic-section {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Zarra, Your academic therapist</h1>
+        <div class="academic-section">
+            <h2>Latest Research</h2>
+            <p>Don't know what's next?We got you.Our team has recently developed an module specifically trained to analyze 8-4-4 transcripts and provide Major recommendations.
+                Upload your transcript and head over to your chat box to check it out!</p>
+        </div>
+        <div class="academic-section">
+            <h2>Upcoming Events</h2>
+            <p>Our team is currently working on Predicting student scores to <strong>provide vivid career paths</strong>.</p>
+        </div>
+        <!-- Add more academic content here -->
+    </div>
+    {% block body %}{% endblock %}
+    
+    <!-- Chatbot widget -->
+    <script src="https://chatrace.com/webchat/plugin.js?v=5"></script><script>ktt10.setup({id:"7MnEL878PJD",accountId:"1383334",color:"#006dff"})</script>
+</body>
+</html>
