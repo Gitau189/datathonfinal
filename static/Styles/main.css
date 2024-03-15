@@ -80,8 +80,10 @@ body {
 }
 
 .description {
-    margin: 0px 25px;
-    text-align: justify;
+    margin: 0px 40px;
+    text-align: center;
+    overflow-wrap: break-word;
+    line-height: 20px;
 }
 
 .btn {
