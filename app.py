@@ -96,10 +96,6 @@ def record():
     else:
         return render_template("error.html", message="Unexpected end of sequence")
 
-
-
-
-
-    app.run(debug = True)
+app.run(debug = True)
 
 
